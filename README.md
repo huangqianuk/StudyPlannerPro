@@ -1,38 +1,4 @@
-<html lang="en">
-    <head>
-        <title>Read Me</title>
-        <meta charset="UTF-8" />
-    </head>
-    <style>
-	body {
-		padding: 0; 
-		font: 13px Helvetica, arial, freesans, clean, sans-serif;
-	}
-	ul { padding: 0; } 
-	ul > li { 
-		list-style: none;
-		border-bottom: 1px solid #ddd;
-	}
-	ul > li > h1 {
-		font-size: 2.0em;
-		border-left: 5px solid #ddd;
-		margin: 1em 0 15px;
-		padding: 10;
-		font-weight: bold;
-		line-height: 1.7;
-		cursor: text;
-		position: relative;
-	}
-	ul > li > p {
-		color: #6c6d70;
-		padding: 15px;
-		font-size: 1.2em;
-		//font-weight: 700;
-		line-height: 1.5em;
-		width: 650px;
-	}
-	</style>
-    <body>
+ <body>
        <ul>
        	 <li>	
         	<h1>What is it?</h1>
@@ -52,4 +18,3 @@ them when to study each topic and for how long.</p>
           
         </ul>
     </body>
-</html>
