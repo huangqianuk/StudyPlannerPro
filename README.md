@@ -1,4 +1,4 @@
-
+	<ul>
        	 <li>	
         	<h1>What is it?</h1>
             <p>A study planner for students to input a list of topics they need to study, details of
@@ -14,3 +14,4 @@ them when to study each topic and for how long.</p>
         	<h1>How to use the 'Study Planner Pro.jar'?</h1>
             <p>Simply double click the 'Study Planner Pro.jar'.</p>
           </li>
+</ul>
