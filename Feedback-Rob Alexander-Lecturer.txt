@@ -1,0 +1,31 @@
+Level 0 - (no marks to gain, possible 5 marks to lose)
+Fine.
+
+
+Level 1 - 6/10 marks:
+About half of the API functionality works as desired. Of the rest, much of the problem is that you modify the Calendar object passed to generateStudyPlan(). The  description of generateStudyPlan() in the StudyPlannerInterface javadoc does not say that you can modify the supplied Calendar object, so it's not good practice to modify them. (NB this is why it's often good to make classes immutable - it prevents this kind of error. Unfortunately, the designers of Calendar didn't do this.)
+
+The GUI features are generally good, although the study plan box does not display breaks, perhaps because the GUI provides no way to specify a break duration.
+
+
+Level 2 - 8.5/15 marks:
+Most of the API functionality works, although somewhere in the recursive structure of generatePlan() it's quite possible to generate a StackOverflowException by doing some reasonable stuff with calendar events. Also, getStudyPlan() includes calendar events in the list it returns; it should not (there's another method (getCalendarEvents()) for getting them). This error causes a number of my other tests to fail. Similarly, that list includes breaks as study blocks - they should just be gaps between study blocks, not study blocks themselves.
+
+The GUI is pretty good. Saving and loading don't seem to work - both do _something_, but after a load the planner's data does not appear to change.
+
+ 
+Level 3 - 10/15 marks:
+The calendar is pretty good, but the calendar doesn't show time outside of study hours at all. The timer mostly works, although if you attempt to create a new timer after the first one finishes, you are told that the timer is already running (with no option to cancel it)
+
+
+Testing - 4/5 marks:
+Your test code is a little complicated, and could benefit from being broken into smaller tests, but generally this is good.
+
+
+Design - 2/5 marks:
+You use a lot of deprecated methods on the Date class, which is unnecessary and rather ugly. The recursive way you've written generatePlan() is also rather hard to follow - did you mean to do this?
+
+
+Overall - 30.5/50 marks (61%):
+A good program.
+
